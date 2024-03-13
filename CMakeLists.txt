@@ -11,9 +11,9 @@ file(CREATE_LINK
     SYMBOLIC
 )
 
-add_executable(Main main.cpp)
+add_executable(Main src/main.cpp)
 
-target_include_directories(Main PRIVATE "${PROJECT_BINARY_DIR}/../include")
+target_include_directories(Main PRIVATE include)
 
 target_link_libraries(Main PUBLIC
     sfml-graphics
